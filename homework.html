@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>(成品)網頁設計入門回家作業</title>
+    <!-- <link rel="stylesheet" href="./styles/block.css" /> -->
+    <link rel="stylesheet" href="./styles/homework.css" />
+  </head>
+  <body>
+    <header>
+      <!-- 置頂列 -->
+      <nav>
+        <!-- LOGO -->
+        <a href="">
+          <img
+            id="logo"
+            src="./images/TWICE-Emblem.png"
+            alt="logo"
+            style="height: 50px"
+          />
+        </a>
+        <!-- 頁面列表 -->
+        <table class="navbar">
+            <tr>
+              <td><a href="">團體資料</a></td>
+              <td><a href="">成員列表</a></td>
+              <td><a href="">音樂作品</a></td>
+              <td><a href="">獎項榮譽</a></td>
+            </tr>
+        </table>
+        <!-- 會員登入 -->
+        <a href="" id="login" class="icon">
+          <img src="./images/user.png" alt="" />
+          <span>註冊/登入</span>
+        </a>
+      </nav>
+
+      <!-- 封面 -->
+      <div id="page-title">
+        <h1>音樂作品</h1>
+      </div>
+    </header>
+
+    <!-- 主要內容 -->
+    <main>
+      <!-- 側邊欄 -->
+      <section id="main-left">
+        <h2>專輯分類</h2>
+        <ul>
+          <a href=""><li class="first">迷你專輯</li></a>
+          <a href=""><li>特別專題</li></a>
+          <a href=""><li>正規專輯</li></a>
+          <a href=""><li>改版專輯</li></a>
+          <a href=""><li class="last">日文專輯</li></a>
+        </ul>
+      </section>
+      <!-- 主欄 -->
+      <section id="main-right">
+        <!-- 副標 -->
+        <h3>1st Mine Album : The Story Begins</h3>
+        <!-- 主文 -->
+        <article>
+          <!-- 圖文說明 -->
+          <div id="description">
+            <div id="info">
+              <h4>專輯資訊</h4>
+              <table>
+                <tr>
+                  <td class="col1">發行日期：</td>
+                  <td class="col2">2015-10-20</td>
+                </tr>
+                <tr>
+                  <td class="col1">曲&emsp;&emsp;目：</td>
+                  <td class="col2">
+                    <ol>
+                      <li>Like OOH-AHH</li>
+                      <li>Do it again</li>
+                      <li>I Think I'm Crazy</li>
+                      <li>Truth</li>
+                      <li>Candy Boy</li>
+                      <li>Like a Fool</li>
+                    </ol>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div>
+              <h4>專輯封面</h4>
+              <img id="album-img" src="./images/album.jpg" alt="" />
+            </div>
+          </div>
+          <!-- 影片 -->
+          <div id="video">
+            <h4>相關影片</h4>
+            <iframe
+              width="680"
+              height="360"
+              src="https://www.youtube.com/embed/vYkGpOeqp4g"
+              title='TWICE(트와이스) - "Like OOH-AHH(OOH-AHH 하게)" Debut stage M COUNTDOWN 151022 EP.448'
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer>
+      <!-- 外部連結 -->
+      <div id="link">
+        <a id="yt" class="icon" href="www.youtube.com">
+          <img src="./images/youtube.png" alt="YouTube" />
+          <span>YouTube</span>
+        </a>
+        <a id="ig" class="icon" href="www.instagram.com">
+          <img src="./images/instagram.png" alt="Instagram" />
+          <span>Instagram</span>
+        </a>
+      </div>
+
+      <!-- 封底 -->
+      <!-- <div style="height: 40vh;"></div> -->
+      <div></div>
+      <p>資展國際股份有限公司 iSpan 2022 僅供網頁設計入門使用</p>
+    </footer>
+  </body>
+</html>

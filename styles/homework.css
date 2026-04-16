@@ -1,0 +1,252 @@
+/* 全域樣式 */
+* {
+  box-sizing: border-box;
+  font-family: "Arial", "微軟正黑體";
+}
+
+:root {
+  --min-web-width: 1300px;
+  --nav-color: #6d6d6d;
+  --nav-border-radius: 20px;
+  --navbar-width: calc(var(--min-web-width) + var(--nav-border-radius) * 2);
+  --navbar-fz: 22px;
+  --footer-height: 30px;
+  --aside-li-height: 2.5em;
+  --main-pick-color: rgb(252, 199, 155);
+  --default-fz: 14px;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  width: var(--min-web-width);
+  font-size: 56px;
+  color: white;
+  line-height: 4em;
+  margin: 0;
+  text-align: center;
+  background-image: url("../images/vinyl.jpg");
+  background-size: 1800px;
+  background-position: -260px -340px;
+}
+
+h2,
+h3 {
+  font-size: 22px;
+  margin: 0;
+  line-height: 1.2em;
+  border-bottom: 1px solid black;
+}
+
+h4 {
+  width: fit-content;
+  border-radius: 5px;
+  background-color: var(--main-pick-color);
+  padding: 0 1.5em;
+  margin: 10px 0 20px 0;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+/* 局部樣式 */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-width: var(--navbar-width);
+  border-bottom: 1px solid var(--nav-color);
+  background-color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0 0 var(--nav-border-radius) var(--nav-border-radius);
+  padding: 1em 0;
+}
+
+table.navbar {
+  min-width: 560px;
+}
+
+table.navbar td {
+  font-size: var(--navbar-fz);
+  border-right: 2px solid var(--nav-color);
+  color: var(--nav-color);
+  padding: 0 20px;
+}
+
+table.navbar td:last-child {
+  border-right: none;
+}
+
+.icon {
+  min-width: 110px;
+  display: flex;
+  align-items: center;
+}
+
+.icon img {
+  height: 1.2em;
+}
+
+.icon img + span {
+  margin: 0 5px;
+}
+
+#login span {
+  font-size: calc(var(--navbar-fz) - 2px);
+  color: var(--nav-color);
+}
+
+#page-title,
+main,
+#link {
+  width: var(--min-web-width);
+  min-width: var(--min-web-width);
+  margin: 20px auto;
+}
+
+#page-title {
+  min-width: var(--navbar-width);
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: 5em;
+}
+
+main {
+  min-width: var(--navbar-width);
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#main-left {
+  width: 240px;
+  padding: 0 10px;
+}
+
+#main-left ul {
+  font-size: var(--default-fz);
+  color: white;
+  font-weight: bold;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#main-left li {
+  line-height: var(--aside-li-height);
+  background-color: #636363;
+  border-radius: 7px;
+  margin: var(--aside-li-height) 0;
+}
+
+#main-left .first {
+  background-color: var(--main-pick-color);
+  margin-top: 0;
+}
+
+#main-left .last {
+  margin-bottom: 0;
+}
+
+#main-right {
+  width: 1000px;
+  padding: 0 10px;
+}
+
+article {
+  font-size: var(--default-fz);
+  padding: 0 20px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#description {
+  width: 230px;
+  min-width: min-content;
+}
+
+#info {
+  width: fit-content;
+}
+
+#info tr,
+#info td {
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+#info td {
+  text-align: left;
+}
+
+#info ol {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+#album-img {
+  height: 200px;
+  width: 100%;
+}
+
+#video {
+  width: fit-content;
+}
+
+#link {
+  margin: 15px auto;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+#yt,
+#ig {
+  font-size: 26px;
+}
+
+#yt {
+  color: rgb(182, 28, 28);
+}
+
+#ig {
+  color: rgb(94, 35, 117);
+}
+
+footer {
+  min-width: var(--navbar-width)
+}
+
+footer > div:last-child {
+  height: var(--footer-height);
+}
+
+footer > p {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-width: var(--navbar-width);
+  background-color: var(--main-pick-color);
+  font-size: var(--default-fz);
+  font-size: 12px;
+  color: #1f1f1f;
+  line-height: var(--footer-height);
+  text-align: right;
+  padding-right: 1em;
+  margin: 0;
+}
